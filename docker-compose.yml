@@ -1,7 +1,6 @@
 version: "2"
 services:
   srly-ose-server:
-    shm_size: '1gb'
     image: screenly/srly-ose-server
     build:
       context: .
@@ -21,6 +20,7 @@ services:
 
   srly-ose-viewer:
     image: screenly/srly-ose-viewer
+    shm_size: '1gb'
     build:
       context: .
       dockerfile: docker/Dockerfile.viewer
