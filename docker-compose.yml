@@ -1,6 +1,7 @@
 version: "2"
 services:
   srly-ose-server:
+    shm_size: '1gb'
     image: screenly/srly-ose-server
     build:
       context: .
